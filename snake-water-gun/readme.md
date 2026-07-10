@@ -1,4 +1,4 @@
-# 🐍💧🔫 Snake Water Gun
+# Snake Water Gun
 
 A simple command-line game built with Python — my take on the classic Rock-Paper-Scissors, but with Snake, Water, and Gun instead. This is one of my first mini projects while learning Python!
 
