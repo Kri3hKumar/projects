@@ -2,7 +2,7 @@
 
 A simple command-line game built with Python — my take on the classic Rock-Paper-Scissors, but with Snake, Water, and Gun instead. This is one of my first mini projects while learning Python!
 
-## 🎮 How to Play
+## How to Play
 
 You play against the computer. Each round, you and the computer pick one of three options:
 
@@ -14,12 +14,12 @@ If both players pick the same thing, it's a draw.
 
 You keep playing rounds until you choose to stop, and the game keeps a running score.
 
-## 🖥️ Requirements
+## Requirements
 
 - Python 3.x
 - No external libraries needed (only uses the built-in `random` module)
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repository:
    ```bash
@@ -33,7 +33,7 @@ You keep playing rounds until you choose to stop, and the game keeps a running s
 3. When prompted, type your choice as `snake`, `water`, or `gun`.
 4. After each round, choose `1` to keep playing or `2` to stop and see the final result.
 
-## 📸 Example Round
+## Example Round
 
 ```
 ========================================
@@ -51,14 +51,14 @@ Do you want to continue?
 2. No
 ```
 
-## ✨ Features
+## Features
 
 - Random computer moves each round
 - Running score tracker for you vs. the computer
 - Final result summary (win / lose / tie) when you quit
 - Clean, boxed heading for a nicer terminal look
 
-## 🛠️ Known Limitations / Ideas for Improvement
+## Known Limitations / Ideas for Improvement
 
 Since this is a learning project, there's room to grow:
 
@@ -67,10 +67,10 @@ Since this is a learning project, there's room to grow:
 - Could add color output using a library like `colorama`
 - Could refactor the win logic into a lookup table for clarity
 
-## 🙋 About
+## About
 
 Built while learning Python as a hands-on way to practice loops, dictionaries, functions, and basic game logic.
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
