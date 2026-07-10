@@ -53,10 +53,13 @@ Do you want to continue?
 
 ## Features
 
-- Random computer moves each round
-- Running score tracker for you vs. the computer
-- Final result summary (win / lose / tie) when you quit
-- Clean, boxed heading for a nicer terminal look
+- Play against the computer
+- Two-player mode
+- Hidden player input using `getpass`
+- Running scoreboard
+- Main menu
+- Exit confirmation
+- Clean terminal interface
 
 ## Known Limitations / Ideas for Improvement
 
