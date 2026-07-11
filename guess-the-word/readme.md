@@ -128,9 +128,10 @@ This project is created for learning and educational purposes.
 
 **Krish**
 
----
-Future updates comming soon...
----
 Computer Science Engineering Student
 
 Always learning, building, and improving through projects.
+
+---
+Future updates comming soon...
+---
