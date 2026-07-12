@@ -133,9 +133,7 @@ Computer Science Engineering Student
 Always learning, building, and improving through projects.
 
 ---
-Future updates comming soon...
 ---
-
 
 
 
