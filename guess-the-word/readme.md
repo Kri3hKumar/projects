@@ -138,9 +138,7 @@ Future updates comming soon...
 
 
 
----
-Updates after first version
----
+## Version 2 Updates
 
 ## Current Features
 
