@@ -135,3 +135,44 @@ Always learning, building, and improving through projects.
 ---
 Future updates comming soon...
 ---
+
+
+
+---
+Updates after first version
+---
+
+## Current Features
+
+- Multiple game modes:
+  - Easy (5-letter words)
+  - Medium (6-letter words)
+  - Hard (8-letter words)
+  - Extreme Mode (limited attempts)
+- Timer Mode with multiple time limits
+- Surprise Mode that randomly selects a game mode
+- Two Player Mode
+- Match History that saves previous game results
+- Color-coded feedback:
+  - 🟩 Green – Correct letter in the correct position
+  - 🟨 Yellow – Correct letter in the wrong position
+  - 🟥 Red – Letter not present in the word
+- Progressive hint system for longer games
+- Score system based on the number of attempts
+- Custom word length support in Timer Mode
+- Simple and interactive command-line interface
+
+---
+
+## Future Improvements
+
+- Player statistics (games played, wins, average attempts, etc.)
+- Highest score leaderboard
+- Save and display personal best scores
+- Validate guesses using a proper English dictionary
+- More game modes and challenges
+- Enhanced multiplayer experience
+- Better input validation and error handling
+- Improved terminal interface and animations
+- Difficulty progression and achievements
+- Additional gameplay features as I continue learning Python
