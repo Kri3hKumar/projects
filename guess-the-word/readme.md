@@ -137,9 +137,9 @@ Future updates comming soon...
 ---
 
 
-
-## Version 2 Updates
-
+---
+ Version 2 Updates
+---
 ## Current Features
 
 - Multiple game modes:
