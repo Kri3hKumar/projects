@@ -179,3 +179,9 @@ Always learning, building, and improving through projects.
 - Improved terminal interface and animations
 - Difficulty progression and achievements
 - Additional gameplay features as I continue learning Python
+
+---
+## Version 3.0
+- Added delay in generating word in color.
+- Added keyboard which will display the letters used till that attempt.
+---
