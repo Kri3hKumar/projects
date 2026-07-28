@@ -1,4 +1,4 @@
-# Expense Tracker CLI
+# Expense Tracker 
 
 ## Overview
 This is a beginner-friendly Python project built to help users track their daily personal expenses through a command-line terminal interface. It records item details, categories, and exact timestamps into a text file, allowing users to analyze their spending against a set monthly budget.
