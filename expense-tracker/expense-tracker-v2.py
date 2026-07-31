@@ -4,6 +4,7 @@ budget = 5000
 from datetime import datetime
 import colorama
 from colorama import Fore
+import os
 month = datetime.now()
 month_no = month.strftime("%m")
 # print(month_no)
@@ -13,39 +14,22 @@ month_no = (int)(month_no)
 month_name = calendar.month_name[month_no]
 
 # if month_no == 1:
-#     month_name = "January"
-# elif month_no == 2:
-#     month_name = "February"
-# elif month_no == 3:
-#     month_name = "March"
-# elif month_no == 4:
-#     month_name = "April"
-# elif month_no == 5:
-#     month_name = "May"
-# elif month_no == 6:
-#     month_name = "June"
-# elif month_no == 7:
-#     month_name = "July"
-# elif month_no == 8:
-#     month_name = "August"
-# elif month_no == 9:
-#     month_name = "September"
-# elif month_no == 10:
-#     month_name = "October"
-# elif month_no == 11:
-#     month_name = "November"
-# elif month_no == 12:
-#     month_name = "December"
 
 # Now naming month name
 # if month_no == 
 current_month_file = datetime.now().strftime(month_name+"_%Y.txt")
 # This is only for if file is new
-import os
+
 
 expenses = []  # this list will hold all expenses
 
 categories = ["Stationary", "Transport", "Food", "Daily needs", "Entertainment", "Health", "Financial", "Others"]
+# Show months
+def month():
+    for i in range(1, 13):
+        print(f"{i}. {calendar.month_name[i]}")
+
+
 def show_menu():
     print("===== Expense Tracker =====")
     print("1. Add Expense")
@@ -67,7 +51,7 @@ def expense_category():
     print("8. Others")
 
 # Add expense
-def add_expense():
+def add_expense(file):
     expense_name = input("Enter expense name: ")
     expense_amount = float(input("Enter expense amount: "))
 
@@ -75,7 +59,7 @@ def add_expense():
     choice = int(input("Enter category number: "))
     print("\n")
     category = categories[choice - 1] #If user enters 3 he means index 2: so this will point toward index 2 which is Food. So this will acress food form the list declared above.
-    save_expense(expense_name, expense_amount, category)
+    save_expense(expense_name, expense_amount, category, file)
 
 # Date and time (Help from AI and google)
 def get_date_day_time():
@@ -88,10 +72,10 @@ def get_date_day_time():
     return today_date, today_day, current_time
 
 # Saving expense
-def save_expense(expense_name, expense_amount, category):
+def save_expense(expense_name, expense_amount, category, file):
 
     date, day, time = get_date_day_time()
-    file = current_month_file
+    
     file_is_new = not os.path.exists(file) or os.path.getsize(file) == 0
     with open(file, "a") as f:
         if file_is_new:
@@ -120,9 +104,9 @@ def budget_mood(total, budget):
     else:
         return Fore.RED + "You've gone over budget!" + Fore.RESET
 # Sum of total amount by category:
-def view_totals_by_category(menu):
+def view_totals_by_category(menu, file):
     totals = {}  # will hold category -> total sum
-    file = input("Enter file name: ")
+    # file = input("Enter file name: ")
     with open(file, "r") as f:
         lines = f.readlines()
 
@@ -201,18 +185,22 @@ def budget_bar(total, budget, length=20):
 while True:
     show_menu()
     menu = int(input("Select your option: "))
-
-    if menu == 1:
-        add_expense()
-    elif menu == 2:
-        file = input("Enter file name: ")
-        view_all_expense(file)
-    elif menu == 3:
-        view_totals_by_category(menu)
-    elif menu == 4:
-        view_totals_by_category(menu)
-    elif menu == 5:
+    if menu == 5:
         print("Exiting... Goodbye!")
         break
+    select_year = int(input("Enter the year: "))
+    month()
+    select_month = int(input("Select the month: "))
+    selected_month_name = calendar.month_name[select_month]
+
+    file = datetime.now().strftime(selected_month_name+"_"+ (str)(select_year) + ".txt")
+    if menu == 1:
+        add_expense(file)
+    elif menu == 2:
+        view_all_expense(file)
+    elif menu == 3:
+        view_totals_by_category(menu, file)
+    elif menu == 4:
+        view_totals_by_category(menu, file)
     else:
         print("Invalid choice, please try again.\n")
