@@ -38,4 +38,4 @@ Projects in this repository may use:
 
 I believe the best way to learn programming is by building projects. Some of these projects may be simple, while others may become more complex over time. Rather than aiming for perfection, this repository reflects my continuous learning and improvement.
 
-Thanks for visiting! 😊
+Thanks for visiting! 
